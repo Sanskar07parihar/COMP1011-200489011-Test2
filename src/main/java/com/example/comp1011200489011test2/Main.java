@@ -15,11 +15,11 @@ public class Main extends Application {
 //        Song[] songList = Utility.getSongsFromJSONFile("ChristmasSongs.json");
 //        System.out.println(songList);
 
-        Song song = new Song();
-        System.out.println(song.getWeek()) ;
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+//        Song song = new Song();
+//        System.out.println(song.getWeek()) ;
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Billboard Christmas");
         stage.setScene(scene);
         stage.show();
     }

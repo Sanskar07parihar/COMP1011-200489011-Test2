@@ -77,6 +77,15 @@ public class Song {
         int year = getYear();
         int month = getMonth();
         int day = getDay();
+        if(year < 1000 ) {
+            year = 1958;
+        }
+        if(month > 12 || month < 1) {
+            month = 1;
+        }
+        if(day > 31 || day < 1){
+            day = 1;
+        }
         LocalDate date = LocalDate.of(year, month, day);
         return date;
     }
