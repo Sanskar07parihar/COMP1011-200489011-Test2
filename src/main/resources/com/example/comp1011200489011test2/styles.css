@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhai+2&family=Baloo+Bhaijaan+2:wght@500&display=swap');
+
+.root{
+    -fx-background-color: #4545bd;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Baloo 2', cursive;
+}
+.label{
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+}
+.button{
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+.table-view{
+    -fx-background-radius: 15px;
+}
+.text-field{
+    -fx-background-radius: 50px;
+}
+.table-view .column-header{
+    -fx-background-color: black;
+}
