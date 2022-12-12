@@ -2,6 +2,8 @@ package com.example.comp1011200489011test2;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.time.LocalDate;
+
 public class Song {
 
     //Instance variables
@@ -65,5 +67,17 @@ public class Song {
                 ", day=" + day +
                 ", url='" + url + '\'' +
                 '}';
+    }
+
+    /**
+     * getWeek() that combines the year, month and day into a LocalDate object and returns it
+     */
+
+    public LocalDate getWeek(){
+        int year = getYear();
+        int month = getMonth();
+        int day = getDay();
+        LocalDate date = LocalDate.of(year, month, day);
+        return date;
     }
 }
